@@ -1,15 +1,13 @@
 import React from "react";
 import './App.css';
 
-import Topo from './componentes/topo';
-import Conteudo from "./componentes/conteudo";
+import LandingPage from "./Landingpage";
 
 function App() {
   return(
-    <section>
-      <Topo />
-      <Conteudo />
-    </section>
+    <div>
+      <LandingPage />
+    </div>
   );
 }
 

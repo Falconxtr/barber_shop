@@ -1,0 +1,97 @@
+.modoclaro {
+    background-color: #fff;
+    color: #000;
+}
+
+.modoescuro {
+    background-color: #252323;
+    color: #fff;
+}
+
+/* Seção Topo */
+.secao-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 95px;
+}
+
+button {
+    border: 2px solid #B2987D;
+    border-radius: 35px;
+    padding: 8px 15px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button img {
+    width: 25px;
+    margin-right: 10px;
+}
+
+/* Seção Conteudo */
+.banner {
+    height: 35vh;
+    background-image: url('../assets/banner-barbearia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: 0% 45%;
+    margin-bottom: 85px;
+}
+
+.secao-conteudo {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px 47px 0;
+}
+
+.secao-conteudo h1 {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.paragrafo1 {
+    margin: auto;
+    max-width: 800px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+.assinatura {
+    color: #B2987D;
+    font-family: 'Great Vibes';
+    font-size: 48px;
+    padding-top: 65px;
+    padding-bottom: 45px;
+}
+
+/* Responsivo */
+@media screen and (max-width: 375px){   
+    .banner {
+        background-position: 50%;
+        background-size: cover;  
+    }
+
+    .paragrafo1 {
+        max-width: 300px;
+    }
+}
+
+
+@media screen and (min-width: 376px) and (max-width: 768px){
+    .paragrafo1 {
+        max-width: 650px;
+    }
+}
