@@ -11,11 +11,9 @@ export default function LadingPage() {
     const alterarCor = () => {
         setNovaCor(!novaCor);
     }
-
-    const classeComposta = `${novaCor ? 'modoclaro' : 'modoescuro'} secaogeral`;
     
     return(
-        <section className={classeComposta}>
+        <section className={novaCor ? 'modoclaro' : 'modoescuro'}>
             <header className="limita-secao secao-topo">
                 <img className="logo" src={ Logo } alt="Barbearia Logo" />
                 <button onClick={alterarCor} className={novaCor ? 'modoclaro' : 'modoescuro'}>
